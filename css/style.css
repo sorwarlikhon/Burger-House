@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+ul,ol{
+    list-style: none;
+}
+
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Beau Rivage', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik Moonrocks', cursive; */
+/* All common css end */
+
+#images_prb{
+    background: url(../images/banar.jpg);
+}
+
+/* header part start */
+.header_main{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+    padding-top: 40px;
+}
+.header_main h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #3d2514;
+}
+/* header part end */
+
+/* Navbar part start */
+#navbar{
+}
+
+.item li{
+    margin-right: 20px;
+}
+.item li a{
+    display: inline-block;
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3d2514;
+    transition: all linear .4s;
+}
+.item li a::before{
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #3d2514;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+    transform: scale(0);
+}
+.item li a:hover::before{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+} 
+.item li a:hover{
+    color: #3d2514;
+}
+/* Navbar part end */
+/* banar part start */
+
+#banar{
+}
+
+#banar .row{
+    align-items: center;
+    justify-content: center;
+}
+.banar_text p{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: 400;
+    font-size: 17px;
+    color: #3d2514;
+    padding: 10px 15px;
+    border: 1px #3d2514;
+   border-style: dashed;
+   border-width: 2px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   text-align: center;
+}
+.banar_text h3{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: 400;
+    font-size: 100px;
+    color: #111;
+    line-height: 85px;
+}
+.banar_text h3 span{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    color: #111;
+}
+.banar_image{
+    position: relative;
+}
+.banar_image h4 {
+    position: absolute;
+    left: 80px;
+    bottom: 90px;
+    height: 140px;
+    width: 140px;
+    background: #f11b1b;
+    border-radius: 50%;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 52px;
+    color: #fff;
+    line-height: 140px;
+    text-align: center;
+    border: #fff;
+    border-style: dashed;
+    border-width: 1px;
+}
+.banar_image h4 span {
+    font-size: 23px;
+}
+/* banar part end */
+
+/* burger part start */
+#burger{
+    padding-top: 78px;
+    padding-bottom: 40px;
+}
+ #burger .mx-3 {
+    margin-right: 0rem!important;
+    margin-left: 6rem!important;
+}
+.prb_1{
+    position: relative;
+    transition: all linear .4s;
+}
+.prb_1:hover {
+    transform: translateY(-10px);
+    box-shadow: -11px 6px 10px 5px #3d2514;
+}
+.prb_1 h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.prb_1 h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.prb_2 {
+    position: relative;
+    margin-bottom: 35px;
+    transition: all linear .4s;
+}
+.prb_2:hover {
+    transform: translateY(-10px);
+    box-shadow: -8px 7px 11px 3px #3d2514;
+}
+.prb_2 h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.prb_2 h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 190px;
+}
+.prb_3{
+    position: relative;
+    transition: all linear .4s;
+}
+.prb_3:hover {
+    transform: translateY(-10px);
+    box-shadow: -8px 7px 11px 3px #3d2514;
+}
+.prb_3 h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.prb_3 h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#burger a{
+    height: 50px;
+    width: 200px;
+    background: #ffc045;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3d2514;
+    margin-top: 70px;
+    transition: all linear .5s;
+}
+#burger a:hover{
+    background: linear-gradient(to right, #3d2514,#ffc045);
+    color: #fff;
+}
+/* burger part end */
+
+/* chosse part start */
+#Choose{
+padding-bottom: 120px;
+}
+
+.chosse_text{
+    padding-bottom: 70px;
+}
+.chosse_text h3 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: 400;
+    font-size: 55px;
+    color: #3d2514;
+}
+.chosse_text p {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 400;
+    font-size: 35px;
+    color: #3d2514;
+    line-height: 45px;
+}
+.bur{
+    align-items: flex-end;
+}
+.bur_img{
+    transition: all linear .4s;
+}
+.bur_img:hover{
+    transform: scale(1.2);
+}
+.bur_text h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: #111111;
+    padding-top: 60px;
+}
+.bur_text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d2514;
+    padding-bottom: 10px;
+    width: 410px;
+    line-height: 20px;
+}
+.bur_text a{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    height: 60px;
+    width: 180px;
+    background: #f11b1b;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all linear .4s;
+}
+.bur_text a:hover{
+    background: url(../images/barger-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: red;
+}
+/* chosse part end */
+
+/* slider part start */
+#bur_slider{
+    padding-bottom: 100px;
+}
+.burar_slider {
+    box-shadow: -5px 5px 15px 10px #3d2514;
+}
+.slider_text{
+    padding-left: 60px;
+    position: relative;
+    padding-top: 50px;
+}
+.slider_text h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #111111;
+}
+.slider_text h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 35px;
+    color: #3d2514;
+    line-height: 20px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.slider_text p {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 400;
+    font-size: 27px;
+    color: #3d2514;
+    line-height: 30px;
+    width: 417px;
+}
+.slick-dots{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+.slick-dots li{
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   background: #dcdcdc;
+   transition: all linear .3s;
+}
+.slick-dots .slick-active{
+    background: #ffc045;
+}
+.slick-dots li:hover{
+    background: #ffc045;
+}
+.slick-dots li button{
+    display: none;
+}
+/* slider part end */
+
+/* book part start */
+.boot_text{
+    padding-bottom: 90px;
+}
+.boot_text h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #111111;
+}
+.boot_text h3{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+
+.bur_btn {
+    padding: 10px 100px 10px 20px;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.bur_btn:focus{
+    outline: none;
+}
+
+.burgur_btn {
+    height: 47px;
+    width: 312px;
+    background: #f11b1b;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 47px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    border: 1px solid #f11b1b;
+    border-radius: 5px;
+}
+#book .row{
+    justify-content: center;
+}
+#book{
+    position: relative;
+    padding-bottom: 100px;
+}
+.book_img_2 {
+    position: absolute;
+    right: 0px;
+    bottom: -115px;
+}
+/* book part end */
+/* fotter part start */
+#fotter{
+    padding-bottom: 65px;
+}
+.fotter_image .row{
+    align-items: center;
+    justify-content: center;
+}
+.fotter_image {
+    background: url(../images/fotterbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    background-attachment: fixed;
+}
+
+.fotter_text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 22px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.fotter_text h5{
+    margin-top: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.fotter_icon1 .row {
+    align-items: baseline;
+}
+.fotter_icon {
+    margin-bottom: 200px;
+}
+.fotter_icon1 i{
+    font-size: 30px;
+    color: #fff;
+}
+.fotter_icon1 h4{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.ft_1{
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    color: #111111;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+/* fotter part end */
